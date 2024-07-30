@@ -1,0 +1,146 @@
+:root {
+    /* ### Primary */
+
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    /* ### Neutral */
+
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background_headings_buttons: hsl(0, 0%, 95%);
+
+    /* FUENTES */
+    --fuente1: "Big Shoulders Display", sans-serif;
+    --fuente2: "Lexend Deca", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+    color: var(--background_headings_buttons);
+    font-family: "Kumbh Sans", sans-serif;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    background-color: var(--background_headings_buttons);
+}
+
+.card {
+    border-radius: 1rem;
+    margin: 10rem;
+    box-shadow: 9px 12px 21px 0px rgba(0,0,0,0.75);
+}
+
+.seccion {
+    width: 32.5rem;
+    height: 44rem;
+    padding: 4.5rem;
+}
+
+.orange {
+    background-color: var(--Bright_orange);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.turquesa {
+    background-color: var(--Dark_cyan);
+}
+
+.verde {
+    background-color: var(--Very_dark_cyan);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.image {
+    margin-bottom: 2rem;
+}
+
+.seccion-title {
+    font-family: var(--fuente1);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.seccion-texto {
+    color: var(--paragraphs);
+    font-family: var(--fuente2);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.boton {
+    background-color: var(--background_headings_buttons);
+    width: 15rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+.oran {
+    color: var(--Bright_orange);
+}
+
+.turq {
+    color: var(--Dark_cyan);
+}
+
+.green {
+    color: var(--Very_dark_cyan);
+}
+.boton:hover{
+    background: none;
+    border: 3px solid var(--background_headings_buttons);
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .contenedor {
+        height: 100vh;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .orange{
+        border-radius: 1rem 0 0 1rem;
+    }
+    .verde{
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    height: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
