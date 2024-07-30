@@ -122,6 +122,10 @@ body {
     .contenedor {
         height: 100vh;
     }
+    .seccion{
+        width: 30.5rem;
+        height: 50rem;
+    }
 
     .card {
         display: grid;
@@ -132,6 +136,9 @@ body {
     }
     .verde{
         border-radius: 0 1rem 1rem 0;
+    }
+    .seccion-texto{
+        margin-bottom: 8rem;
     }
 }
 
